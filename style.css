@@ -19,10 +19,6 @@ a {
     color: #0D0D0D;
 }
 
-h1 {
-    font-size: 38px;
-}
-
 header>nav {
     display: flex;
     justify-content: space-between;
@@ -44,21 +40,64 @@ header>nav>div>ul {
 
 main {
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
+    margin-top: 20vh;
+}
+
+main>div {
+    background-color: #F9F9F9;
+    padding: 1rem;
+    border: 1px solid black;
+    border-radius: 15px;
 }
 
 .login-container h1 {
+    font-size: 38px;
     text-align: center;
     letter-spacing: .75rem;
+}
+
+.login-container a {
+    text-align: center;
 }
 
 .login-container form {
     display: flex;
     flex-direction: column;
+    gap: .75rem;
+    margin: 2vh 0 4vh 0;
+}
+
+.login-container input {
+    padding: 0.3rem;
+    border: 1px solid #595959;
+    border-radius: 3px;
+}
+
+.login-container button {
+    margin: 0 auto;
+    width: 7.3vw;
+    height: 3vh;
+    background-color: #04BF84;
+    color: #FAFAFA;
+    border: none;
+    border-radius: 3px;
 }
 
 .register-container form {
     display: flex;
     flex-direction: column;
+    gap: .5rem;
+}
+
+.register-container button {
+    margin: 0 auto;
+    width: 8.3vw;
+    height: 3vh;
+    background-color: white;
+    color: #04BF84;
+    border: 1px solid #04BF84;
+    border-radius: 3px;
 }
