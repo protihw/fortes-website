@@ -40,15 +40,15 @@ function userLogin(event) {
     let userMail = document.getElementById("userMail");
     let userPass = document.getElementById("userPass");
     
-    // Verificação de possíveis erros.
-    if (userMail.value == "" && userPass.value == "") {
-        errorMessage("Você não preencheu os campos de e-mail e senha.");
-    } else if (userMail.value == "" || userPass.value == "") {
-        errorMessage("Você não preencheu todos os campos necessários.");
+    // Autenticação de entrada.
+    if (authenticateUser(userMail.value, userPass.value)) {
+        window.alert("Login realizado com sucesso.");
     } else {
-        // Autenticação de entrada.
-        if (authenticateUser(userMail.value, userPass.value)) {
-            window.alert("Login realizado com sucesso.");
+        // Verificação de possíveis erros.
+        if (userMail.value == "" && userPass.value == "") {
+            errorMessage("Você não preencheu os campos de e-mail e senha.");
+        } else if (userMail.value == "" || userPass.value == "") {
+            errorMessage("Você não preencheu todos os campos necessários.");
         } else {
             window.alert("Login fracassou.")
         }
