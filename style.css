@@ -19,6 +19,16 @@ a {
     color: #0D0D0D;
 }
 
+button {
+    cursor: pointer;
+    transition: .3s;
+    text-align: center;
+}
+
+button:hover {
+    font-size: .8rem;
+}
+
 header>nav {
     display: flex;
     justify-content: space-between;
@@ -76,6 +86,10 @@ main>div {
     border-radius: 3px;
 }
 
+#recoverPass {
+    font-size: 0.75rem;
+}
+
 .login-container button {
     margin: 0 auto;
     width: 7.3vw;
@@ -100,4 +114,13 @@ main>div {
     color: #04BF84;
     border: 1px solid #04BF84;
     border-radius: 3px;
+}
+
+#errorBox {
+    display: none;
+    position: absolute;
+    bottom: 0;
+    margin: 3vh;
+    background-color: #DB0000;
+    color: white;
 }

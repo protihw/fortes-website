@@ -26,19 +26,22 @@
         <div>
             <div class="login-container">
                 <h1>LOGIN</h1>
-                <form>
-                    <input type="text" placeholder="E-mail ou celular">
-                    <input type="text" placeholder="Senha">
-                    <a href="#">Esqueceu a senha?</a>
+                <form onsubmit="userLogin(event)">
+                    <input type="text" placeholder="E-mail ou celular" id="userMail">
+                    <input type="text" placeholder="Senha" id="userPass">
+                    <a href="#" id="recoverPass">Esqueceu a senha?</a>
                     <button type="submit">ENTRAR</button>
                 </form>
             </div>
             <div class="register-container">
                 <form>
-                    <a href="#">Ainda não possui uma conta?</a>
-                    <button type="submit">CADASTRE-SE</button>
+                    <p>Ainda não possui uma conta?</p>
+                    <button type="button">CADASTRE-SE</button>
                 </form>
             </div>
+        </div>
+        <div id="errorBox">
+            <p></p>
         </div>
     </main>
 </body>
