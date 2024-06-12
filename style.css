@@ -41,11 +41,12 @@ header>nav>div>ul {
 }
 
 #mainIcon {
-    width: 7.5vw;
-    height: 5vh;
+    width: 150px;
+    height: 35px;
     background-image: url("./Assets/Icons/FORTES_LOGO_ICON.png");
     background-size: contain;
     background-position: center;
+    background-repeat: no-repeat;
 }
 
 main {
@@ -58,7 +59,7 @@ main {
 
 main>div {
     background-color: #F9F9F9;
-    padding: 1rem;
+    padding: 2rem;
     border: 1px solid black;
     border-radius: 15px;
 }
@@ -93,8 +94,8 @@ main>div {
 
 .login-container button {
     margin: 0 auto;
-    width: 7.3vw;
-    height: 3vh;
+    min-width: 8.3vw;
+    min-height: 4vh;
     background-color: #04BF84;
     color: #FAFAFA;
     border: none;
@@ -109,8 +110,8 @@ main>div {
 
 .register-container button {
     margin: 0 auto;
-    width: 8.3vw;
-    height: 3vh;
+    min-width: 9.3vw;
+    min-height: 4vh;
     background-color: white;
     color: #04BF84;
     border: 1px solid #04BF84;
@@ -124,4 +125,10 @@ main>div {
     margin: 3vh;
     background-color: #DB0000;
     color: white;
+}
+
+@media (max-width: 1180px) {
+    header>nav>div>ul {
+        font-size: .75rem;
+    }
 }
