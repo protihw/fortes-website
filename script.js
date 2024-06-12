@@ -1,3 +1,4 @@
+// Objeto JS que armazena dados fictícios para testar as funcionalidades da tela.
 const users = {
     "registeredUsers": {
         "admin": {
