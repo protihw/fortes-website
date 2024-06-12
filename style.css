@@ -125,14 +125,3 @@ main>div {
     background-color: #DB0000;
     color: white;
 }
-
-.password-container {
-    position: relative;
-}
-
-.password-container .fa-eye {
-    position: absolute;
-    right: 10px;
-    top: 50%;
-    cursor: pointer;
-}

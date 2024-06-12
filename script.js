@@ -55,3 +55,7 @@ function userLogin(event) {
         }
     }
 }
+
+function loadRegisterPage() {
+    window.location.href = "Pages/registration.html"
+}
