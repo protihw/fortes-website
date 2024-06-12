@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fortes Engenharia</title>
+    <link rel="stylesheet" href="../Assets/styles/registration.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" href="../Assets/Icons/FORTES_LOGO_FAVICON.png" type="image/x-icon">
+    <script src="script.js"></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <div id="mainIcon">
+                <!-- Logo da Fortes Engenharia -->
+            </div>
+            <div>
+                <ul>
+                    <li><a href="#">ATUALIZAÇÕES</a></li>
+                    <li><a href="#">PROJETOS</a></li>
+                    <li><a href="#">INSTITUIÇÕES</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div>
+            <div id="register-container">
+                <h1>CADASTRO</h1>
+                <form onsubmit="userRegister()">
+                    <input type="text" id="userMail" placeholder="E-mail ou celular">
+                    <input type="password" id="userPass1" placeholder="Senha">
+                    <input type="password" id="userPass2" placeholder="Repetir Senha">
+                    <button type="submit">CADASTRE-SE</button>
+                </form>
+            </div>
+        </div>
+        <div id="errorBox">
+            <p></p>
+        </div>
+    </main>
+</body>
+</html>
+
