@@ -67,6 +67,7 @@ main>div {
     font-size: 38px;
     text-align: center;
     letter-spacing: .75rem;
+    margin-bottom: 1.5vh;
 }
 
 #register-container form {
@@ -75,8 +76,16 @@ main>div {
     gap: .5rem;
 }
 
+#register-container input {
+    padding: 0.3rem;
+    border: 1px solid #595959;
+    border-radius: 3px;
+    margin: 1vh 0;
+}
+
 #register-container button {
     margin: 0 auto;
+    margin-top: 3vh;
     width: 8.3vw;
     height: 3vh;
     background-color: white;

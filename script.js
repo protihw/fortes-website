@@ -1,16 +1,10 @@
 // Objeto JS que armazena dados fictícios para testar as funcionalidades da tela.
-const users = {
-    "registeredUsers": {
-        "admin": {
-            "login": "admin@fortes.ind.br",
-            "password": "admin"    
-        },
-        "user1": {
-            "login": "user1@gmail.com",
-            "password": "user1"
-        }
-    }
-};
+
+fetch("users.json").then((response) => {
+    response.json().then((registeredUsers) => {
+        window.users = registeredUsers;
+    })
+})
 
 function errorMessage(message) {
     let errorBox = document.getElementById("errorBox");
@@ -24,14 +18,13 @@ function errorMessage(message) {
 }
 
 function authenticateUser(inputMail, inputPass) {
-    const registeredUsers = users.registeredUsers;
-
-    for (let user in registeredUsers) {
-        if (registeredUsers[user].login === inputMail && registeredUsers[user].password === inputPass) {
+    for (let user in users.registeredUsers) {
+        const userData = users.registeredUsers[user];
+        if (userData.login === inputMail && userData.password === inputPass) {
             return true;
         }
     }
-    
+
     return false;
 }
 
@@ -40,7 +33,7 @@ function userLogin(event) {
 
     let userMail = document.getElementById("userMail");
     let userPass = document.getElementById("userPass");
-    
+
     // Autenticação de entrada.
     if (authenticateUser(userMail.value, userPass.value)) {
         window.alert("Login realizado com sucesso.");

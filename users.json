@@ -1,0 +1,12 @@
+{
+    "registeredUsers": {
+        "admin": {
+            "login": "admin@fortes.ind.br",
+            "password": "admin"
+        },
+        "user1": {
+            "login": "user1@gmail.com",
+            "password": "user1"
+        }
+    }
+}
