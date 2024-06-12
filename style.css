@@ -88,6 +88,7 @@ main>div {
 
 #recoverPass {
     font-size: 0.75rem;
+    text-decoration: underline;
 }
 
 .login-container button {
@@ -123,4 +124,15 @@ main>div {
     margin: 3vh;
     background-color: #DB0000;
     color: white;
+}
+
+.password-container {
+    position: relative;
+}
+
+.password-container .fa-eye {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    cursor: pointer;
 }
